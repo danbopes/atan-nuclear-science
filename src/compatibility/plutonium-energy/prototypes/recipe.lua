@@ -6,7 +6,7 @@ data:extend({
     {
         type = "recipe",
         name = "nuclear-science-pack-from-plutonium",
-        category = "centrifuging",
+        categories = { "centrifuging" },
         enabled = false,
         energy_required = 10, -- NOTE: will be doubled to 20 in data-updates
         ingredients = {

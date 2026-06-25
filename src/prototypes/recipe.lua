@@ -2,7 +2,7 @@ data:extend({
     {
         type = "recipe",
         name = "nuclear-science-pack",
-        category = "centrifuging",
+        categories = { "centrifuging" },
         enabled = false,
         energy_required = 10, -- NOTE: will be doubled to 20 in data-updates
         ingredients = {
@@ -23,7 +23,7 @@ data:extend({
     {
         type = "recipe",
         name = "atan-atom-forge",
-        category = "advanced-centrifuging-or-crafting",
+        categories = { "advanced-centrifuging-or-crafting" },
         enabled = false,
         energy_required = 12,
         ingredients = {

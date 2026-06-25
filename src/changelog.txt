@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.4
+Date: 2026-06-25
+  Changes:
+    - Updated for Factorio 2.1.
+  Compatibility:
+    - Change nuclear science pack from a tool to an item, dropping the removed durability fields.
+    - Change recipe category to categories for the nuclear science pack, atom forge, and plutonium recipes.
+---------------------------------------------------------------------------------------------------
 Version: 0.3.3
 Date: 2025-02-14
   Bugfixes:

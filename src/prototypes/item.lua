@@ -3,7 +3,7 @@ local tint = require("__base__.prototypes.item-tints")
 
 data:extend({
     {
-        type = "tool",
+        type = "item",
         name = "nuclear-science-pack",
         localised_description = { "item-description.science-pack" },
         icon = "__atan-nuclear-science__/graphics/icons/nuclear-science-pack.png",
@@ -16,10 +16,6 @@ data:extend({
         stack_size = 200,
         default_import_location = "nauvis",
         weight = 1 * kg,
-        durability = 1,
-        durability_description_key = "description.science-pack-remaining-amount-key",
-        factoriopedia_durability_description_key = "description.factoriopedia-science-pack-remaining-amount-key",
-        durability_description_value = "description.science-pack-remaining-amount-value",
         random_tint_color = tint.bluish_science,
         pictures = {
             layers = {

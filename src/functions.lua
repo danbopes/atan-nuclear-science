@@ -57,10 +57,10 @@ function M.recipe.double_time(recipe_name)
 end
 
 function M.recipe.is_centrifuging(recipe_name)
-    if not data.raw["recipe"][recipe_name] or not data.raw["recipe"].category then
+    if not data.raw["recipe"][recipe_name] or not data.raw["recipe"].categories then
         return false
     end
-    local category = data.raw["recipe"].category
+    local category = data.raw["recipe"].categories
     -- Don't include advanced-centrifuging-or-crafting
     return category == "centrifuging" or category == "centrifuging-or-crafting"
 end
@@ -69,7 +69,7 @@ function M.recipe.set_category(recipe_name, category)
     if not data.raw["recipe"][recipe_name] then
         return
     end
-    data.raw["recipe"][recipe_name].category = category
+    data.raw["recipe"][recipe_name].categories = { category }
 end
 
 function M.tech.add_effect(tech_name, effect)
